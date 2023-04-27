@@ -1,0 +1,7 @@
+PMUIO2 Supply Power Voltage1:./scripts/io-domain.sh: 29: ./scripts/io-domain.sh: whiptail: not found
+VCCIO1 Supply Power Voltage1:./scripts/io-domain.sh: 39: ./scripts/io-domain.sh: whiptail: not found
+VCCIO3 Supply Power Voltage1:./scripts/io-domain.sh: 49: ./scripts/io-domain.sh: whiptail: not found
+VCCIO4 Supply Power Voltage1:./scripts/io-domain.sh: 59: ./scripts/io-domain.sh: whiptail: not found
+VCCIO5 Supply Power Voltage1:./scripts/io-domain.sh: 69: ./scripts/io-domain.sh: whiptail: not found
+VCCIO6 Supply Power Voltage1:./scripts/io-domain.sh: 79: ./scripts/io-domain.sh: whiptail: not found
+VCCIO7 Supply Power Voltage1:./scripts/io-domain.sh: 89: ./scripts/io-domain.sh: whiptail: not found
