@@ -911,12 +911,12 @@
 
 		ov13850_default_pin: ov13850-default-pin {
 			rockchip,pins =
-				<4 RK_PB2 RK_FUNC_GPIO &pcfg_pull_none>,
+				<4 RK_PA6 RK_FUNC_GPIO &pcfg_pull_none>,
 				<0 RK_PD6 RK_FUNC_GPIO &pcfg_pull_none>;
 		};
 		ov13850_sleep_pin: ov13850-sleep-pin {
 			rockchip,pins =
-				<4 RK_PB2 RK_FUNC_GPIO &pcfg_pull_none>,
+				<4 RK_PA6 RK_FUNC_GPIO &pcfg_pull_none>,
 				<0 RK_PD6 RK_FUNC_GPIO &pcfg_pull_none>;
 		};
 	};
@@ -1408,10 +1408,10 @@
 		interrupts = <RK_PA4 IRQ_TYPE_EDGE_FALLING>;
 		irq-gpio = <&gpio1 RK_PA4 IRQ_TYPE_LEVEL_LOW>;
 		reset-gpio = <&gpio1 RK_PB0 GPIO_ACTIVE_HIGH>;
-		// touchscreen-size-x = <800>;
-		// touchscreen-size-y = <480>;
-		touchscreen-size-x = <1024>;
-		touchscreen-size-y = <600>;
+		// touchscreen-size-x = <1024>;
+		// touchscreen-size-y = <600>;
+		max-x = <1024>;
+		max-y = <600>;
 		// touchscreen-swapped-x-y;
 		uniq = "lvds";
 		status = "okay";
@@ -1444,6 +1444,14 @@
 	/* Slave: SHT40 */
 
 	/* Slave: MP2760(PMIC) */
+};
+
+&i2c4 {
+	status = "okay";
+
+	/* Slave: PICO384 */
+
+	/* Slave: 九轴+地磁 */
 };
 
 &i2s0_8ch {

@@ -55,6 +55,9 @@
 #define GC2155_HEIGHT 288
 #define GC2155_FRAME_RATE 60
 
+#define GC2155_WIDTH_640 1280
+#define GC2155_HEIGHT_512 512
+
 static const char * const gc2155_supply_names[] = {
 	"avdd",
 	"dovdd",
@@ -847,26 +850,6 @@ static struct regval gc2155_1600x1200_7fps[] = {
 };
 
 static const struct gc2155_mode supported_modes[] = {
-	// {
-	// 	.width		= 800,
-	// 	.height		= 600,
-	// 	.fps		= 15,
-	// 	.max_fps = {
-	// 		.numerator = 10000,
-	// 		.denominator = 150000,
-	// 	},
-	// 	.reg_list	= gc2155_800x600_15fps,
-	// },
-	// {
-	// 	.width		= 1600,
-	// 	.height		= 1200,
-	// 	.fps		= 7,
-	// 	.max_fps = {
-	// 		.numerator = 10000,
-	// 		.denominator = 70000,
-	// 	},
-	// 	.reg_list	= gc2155_1600x1200_7fps,
-	// },
 	{
 		.width		= GC2155_WIDTH,
 		.height		= GC2155_HEIGHT,
@@ -880,8 +863,8 @@ static const struct gc2155_mode supported_modes[] = {
 		.reg_list	= gc2155_800x600_15fps,
 	},
 	{
-		.width		= GC2155_WIDTH,
-		.height		= GC2155_HEIGHT,
+		.width		= GC2155_WIDTH_640,
+		.height		= GC2155_HEIGHT_512,
 		.fps		= GC2155_FRAME_RATE,
 		.max_fps = {
 			.numerator = 10000,
